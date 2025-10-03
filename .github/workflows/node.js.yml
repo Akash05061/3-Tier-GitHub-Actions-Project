@@ -85,7 +85,7 @@ jobs:
             -Dsonar.exclusions=**/node_modules/**,**/dist/**,**/build/**
 
   sonar-backend:
-    runs-on: Agent-1
+    runs-on: ubuntu-latest
     needs: sonar-frontend
     steps:
       - name: Checkout code
